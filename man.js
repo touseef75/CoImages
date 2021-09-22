@@ -28,9 +28,9 @@
      console.log(result)
      result.photos.forEach(photo => {
          const pic = document.createElement("div");
-         pic.innerHTML = `<img src=${photo.src.Nature}
+         pic.innerHTML = `<img src=${photo.src.large}
          <p> photo : ${photo.photographer}</p>
-         <a href = ${photo.src.Nature}>download</a>
+         <a href = ${photo.src.large}>download</a>
          `;
          document.querySelector(".gallery").appendChild(pic);
 
