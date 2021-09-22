@@ -1,3 +1,29 @@
 li.hide{
     display: none;
 }
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.gallery{
+    width: 100%;
+    margin: 12vh 50%;
+    transform: translateX(-50%);
+    display: grid;
+    grid-template-columns: repeat(5,200px);
+    row-gap: 10px;
+    column-gap: 10px;
+    justify-content: center;
+}
+.gallery div{
+    position: relative;
+}
+img{
+    margin-left: 5px;
+    height: 300px;
+    width: 200px;
+    object-fit: cover;
+    object-position: center;
+    cursor: pointer;
+}
