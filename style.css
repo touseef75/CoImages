@@ -27,3 +27,12 @@ img{
     object-position: center;
     cursor: pointer;
 }
+.main{
+    height: 80vh;
+    width: 100%;
+}
+#img2{
+    margin-left: 50px;
+    width: 70%;
+    height: 80vh;
+}

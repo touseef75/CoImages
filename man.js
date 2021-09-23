@@ -15,7 +15,7 @@
 // press();
  const auth = "563492ad6f9170000100000192ce204c3d4d43f48315e56b93786c51";
  async function images(){
-     const data = await fetch (`https://api.pexels.com/v1/curated?per_page=100`,
+     const data = await fetch (`https://api.pexels.com/v1/search?query=nature&per_page=100`,
      {
          method:"GET",
          headers:{
