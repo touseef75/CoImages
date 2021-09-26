@@ -32,7 +32,15 @@ img{
     width: 100%;
 }
 #img2{
-    margin-left: 50px;
-    width: 70%;
-    height: 80vh;
+    margin-left: 80px;
+    width: 60%;
+    height: 70vh;
+}
+.next{
+    display: flex;
+    justify-content: end;
+    width: 100%;
+}
+#btn2{
+    width: 10%;
 }
