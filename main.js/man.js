@@ -43,6 +43,9 @@ let next = document.getElementById("btn2");
  }
  images();
 
+
+ 
+
 //  next button 
  next.addEventListener("click",function(){
      if(!search){
@@ -61,16 +64,14 @@ let next = document.getElementById("btn2");
 
 //  search value 
   
+let input = document.getElementById("input");
 
-  let searchs = document.getElementById("button-addon2");
+let searchs = document.getElementById("button-addon2");
 
  searchs.addEventListener("click",function(){
-     let input = document.getElementById("input").value;
-
-
  const auth = "563492ad6f9170000100000192ce204c3d4d43f48315e56b93786c51";
  async function ser(){
-     const data = await fetch (`https://api.pexels.com/v1/search?query=${input}e&per_page=10`,
+     const data = await fetch (`https://api.pexels.com/v1/search?query=${input.value}e&per_page=10`,
      {
          method:"GET",
          headers:{
@@ -90,11 +91,14 @@ let next = document.getElementById("btn2");
          document.querySelector(".gallery").appendChild(pic);
 
      });
+
      
  }
  ser();
+ input.value = "";
+ search = true;
+ 
 })
  
-
 
 
