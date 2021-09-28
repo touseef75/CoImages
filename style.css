@@ -6,7 +6,7 @@ li.hide{
     padding: 0;
     box-sizing: border-box;
 }
-.gallery , .gallery2{
+.gallery , .gallery{
     width: 100%;
     margin: 12vh 50%;
     transform: translateX(-50%);

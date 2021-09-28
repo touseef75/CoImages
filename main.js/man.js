@@ -20,6 +20,8 @@ let next = document.getElementById("btn2");
  var gallery2 = document.querySelector(".gallery2");
  var main2 = document.querySelector(".main");
  var home = document.getElementById("home");
+
+ 
  home.addEventListener("click",()=>{
      search = false;
      gallery1.classList.remove("hide");
